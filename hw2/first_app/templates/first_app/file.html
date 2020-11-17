@@ -1,0 +1,6 @@
+<h1> &nbsp Hello Everyone </h1>
+{% if request.admin.is_authenticated %}
+<h2> {{user.username}} is logged in </h2>
+{% else %}
+<h3> that user is not logged in </h3>
+{% endif %}
